@@ -1,0 +1,9 @@
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Unit 5 (Arrays & Lists)\IntroToArraysTristanR\IntroToArraysTristanR\bin\Debug\IntroToArraysTristanR.exe.config
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Unit 5 (Arrays & Lists)\IntroToArraysTristanR\IntroToArraysTristanR\bin\Debug\IntroToArraysTristanR.exe
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Unit 5 (Arrays & Lists)\IntroToArraysTristanR\IntroToArraysTristanR\bin\Debug\IntroToArraysTristanR.pdb
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Unit 5 (Arrays & Lists)\IntroToArraysTristanR\IntroToArraysTristanR\obj\Debug\IntroToArraysTristanR.csprojResolveAssemblyReference.cache
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Unit 5 (Arrays & Lists)\IntroToArraysTristanR\IntroToArraysTristanR\obj\Debug\IntroToArraysTristanR.Form1.resources
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Unit 5 (Arrays & Lists)\IntroToArraysTristanR\IntroToArraysTristanR\obj\Debug\IntroToArraysTristanR.Properties.Resources.resources
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Unit 5 (Arrays & Lists)\IntroToArraysTristanR\IntroToArraysTristanR\obj\Debug\IntroToArraysTristanR.csproj.GenerateResource.Cache
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Unit 5 (Arrays & Lists)\IntroToArraysTristanR\IntroToArraysTristanR\obj\Debug\IntroToArraysTristanR.exe
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Unit 5 (Arrays & Lists)\IntroToArraysTristanR\IntroToArraysTristanR\obj\Debug\IntroToArraysTristanR.pdb
