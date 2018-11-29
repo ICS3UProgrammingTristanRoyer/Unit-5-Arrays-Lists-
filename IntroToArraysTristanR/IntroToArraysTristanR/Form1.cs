@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Created by: Tristan Royer
+ * Created on: 29-11-2018
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #36 - Introduction to Arrays
+ * This program uses arrays to calculate the average of 10 numbers.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
