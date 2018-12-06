@@ -53,14 +53,21 @@ namespace _2dArraysTristanR
 					// insert the random Number into the array and the current width and height
 					a2DArray[widthCounter, heightCounter] = aRandomNumber;
 
+					// add the randomumber to the string of array numbers
+					aPieceOfText = aPieceOfText + " " + aRandomNumber;
+
 					// get the user total
 					userTotal = userTotal +  widthCounter + heightCounter;
 
 
 
 				}
+				// add a line break to the end of the line to show a new row in the string
+				aPieceOfText = aPieceOfText + "\r" + "\n";
 
 			}
+			// insert the string into the textbox
+			this.txtArray.Text = aPieceOfText;
 
 			userTotal = GetAverage(a2DArray[width,height], userTotal);
 			
