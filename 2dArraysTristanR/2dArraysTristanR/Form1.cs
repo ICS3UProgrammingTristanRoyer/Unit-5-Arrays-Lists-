@@ -12,13 +12,22 @@ namespace _2dArraysTristanR
 {
 	public partial class Form1 : Form
 	{
+		int userTotal = -1;
+		int average;
+	
+
+
 		public Form1()
 		{
-			InitializeComponent();
-		}
 
-		private double GetAverage (int [,] the2DArray , double total)
+			InitializeComponent();
+			
+
+
+		}
+		private int GetAverage (int [,] the2DArray , ref int total )
 		{
+			
 			total = total / the2DArray.Length;
 
 			return total;
@@ -32,8 +41,9 @@ namespace _2dArraysTristanR
 			int height;
 			Random randomNumberGenerator = new Random();
 			int aRandomNumber;
-			int userTotal = 0;
 			string aPieceOfText = null;
+		
+
 
 
 			// get the desired width and height from the user.
@@ -43,13 +53,15 @@ namespace _2dArraysTristanR
 			// declare the 2d array with the desired width and height
 			int[,] a2DArray = new int[width, height];
 
+
+
 			// loop though each element within the width
 			for (int widthCounter = 0; widthCounter < width; widthCounter++)
 			{
 				// loop through each element in the hieght
 				for (int heightCounter = 0; heightCounter < height; heightCounter++)
 				{   // get a random number between 0 and 9
-					aRandomNumber = randomNumberGenerator.Next(0, 9 + 1);
+					aRandomNumber = randomNumberGenerator.Next(0, 9+1);
 					// insert the random Number into the array and the current width and height
 					a2DArray[widthCounter, heightCounter] = aRandomNumber;
 
@@ -58,19 +70,28 @@ namespace _2dArraysTristanR
 
 					// get the user total
 					userTotal = userTotal +  widthCounter + heightCounter;
-
-
-
-				}
+			}
 				// add a line break to the end of the line to show a new row in the string
 				aPieceOfText = aPieceOfText + "\r" + "\n";
 
 			}
 			// insert the string into the textbox
 			this.txtArray.Text = aPieceOfText;
+		    average = GetAverage(a2DArray , ref userTotal);
 
-			userTotal = GetAverage(a2DArray[width,height], userTotal);
-			
+
+
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			lblAnswer.Text = "the average is:" + average;
+
+		}
+
+		private void txtArray_TextChanged(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

@@ -29,11 +29,11 @@
 		private void InitializeComponent()
 		{
 			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.txtMark = new System.Windows.Forms.TextBox();
 			this.btnEnter = new System.Windows.Forms.Button();
 			this.Numbers = new System.Windows.Forms.ListBox();
 			this.btnCalculate = new System.Windows.Forms.Button();
-			this.txtMark = new System.Windows.Forms.Label();
+			this.lblAnswer = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -45,12 +45,12 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Enter a mark  between 0 and 100:";
 			// 
-			// textBox1
+			// txtMark
 			// 
-			this.textBox1.Location = new System.Drawing.Point(205, 6);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(77, 20);
-			this.textBox1.TabIndex = 1;
+			this.txtMark.Location = new System.Drawing.Point(205, 6);
+			this.txtMark.Name = "txtMark";
+			this.txtMark.Size = new System.Drawing.Size(77, 20);
+			this.txtMark.TabIndex = 1;
 			// 
 			// btnEnter
 			// 
@@ -78,26 +78,27 @@
 			this.btnCalculate.TabIndex = 4;
 			this.btnCalculate.Text = "Calculate average";
 			this.btnCalculate.UseVisualStyleBackColor = true;
+			this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
 			// 
-			// txtMark
+			// lblAnswer
 			// 
-			this.txtMark.AutoSize = true;
-			this.txtMark.Location = new System.Drawing.Point(124, 229);
-			this.txtMark.Name = "txtMark";
-			this.txtMark.Size = new System.Drawing.Size(13, 13);
-			this.txtMark.TabIndex = 5;
-			this.txtMark.Text = "--";
+			this.lblAnswer.AutoSize = true;
+			this.lblAnswer.Location = new System.Drawing.Point(124, 229);
+			this.lblAnswer.Name = "lblAnswer";
+			this.lblAnswer.Size = new System.Drawing.Size(13, 13);
+			this.lblAnswer.TabIndex = 5;
+			this.lblAnswer.Text = "--";
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 261);
-			this.Controls.Add(this.txtMark);
+			this.Controls.Add(this.lblAnswer);
 			this.Controls.Add(this.btnCalculate);
 			this.Controls.Add(this.Numbers);
 			this.Controls.Add(this.btnEnter);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.txtMark);
 			this.Controls.Add(this.label1);
 			this.Name = "Form1";
 			this.Text = "Form1";
@@ -109,11 +110,11 @@
 		#endregion
 
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txtMark;
 		private System.Windows.Forms.Button btnEnter;
 		private System.Windows.Forms.ListBox Numbers;
 		private System.Windows.Forms.Button btnCalculate;
-		private System.Windows.Forms.Label txtMark;
+		private System.Windows.Forms.Label lblAnswer;
 	}
 }
 

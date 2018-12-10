@@ -28,24 +28,17 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.Numbers = new System.Windows.Forms.ListBox();
 			this.btnStart = new System.Windows.Forms.Button();
 			this.nudWidth = new System.Windows.Forms.NumericUpDown();
 			this.nudHeight = new System.Windows.Forms.NumericUpDown();
 			this.lblWidth = new System.Windows.Forms.Label();
 			this.lblHeight = new System.Windows.Forms.Label();
 			this.lblAnswer = new System.Windows.Forms.Label();
+			this.txtArray = new System.Windows.Forms.TextBox();
+			this.button1 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.nudWidth)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudHeight)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// Numbers
-			// 
-			this.Numbers.FormattingEnabled = true;
-			this.Numbers.Location = new System.Drawing.Point(76, 125);
-			this.Numbers.Name = "Numbers";
-			this.Numbers.Size = new System.Drawing.Size(120, 95);
-			this.Numbers.TabIndex = 0;
 			// 
 			// btnStart
 			// 
@@ -98,18 +91,38 @@
 			this.lblAnswer.TabIndex = 6;
 			this.lblAnswer.Text = "The average is:";
 			// 
+			// txtArray
+			// 
+			this.txtArray.Location = new System.Drawing.Point(93, 126);
+			this.txtArray.Multiline = true;
+			this.txtArray.Name = "txtArray";
+			this.txtArray.Size = new System.Drawing.Size(100, 71);
+			this.txtArray.TabIndex = 7;
+			this.txtArray.TextChanged += new System.EventHandler(this.txtArray_TextChanged);
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(93, 203);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 23);
+			this.button1.TabIndex = 8;
+			this.button1.Text = "Calculate";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 261);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.txtArray);
 			this.Controls.Add(this.lblAnswer);
 			this.Controls.Add(this.lblHeight);
 			this.Controls.Add(this.lblWidth);
 			this.Controls.Add(this.nudHeight);
 			this.Controls.Add(this.nudWidth);
 			this.Controls.Add(this.btnStart);
-			this.Controls.Add(this.Numbers);
 			this.Name = "Form1";
 			this.Text = "Form1";
 			((System.ComponentModel.ISupportInitialize)(this.nudWidth)).EndInit();
@@ -120,14 +133,14 @@
 		}
 
 		#endregion
-
-		private System.Windows.Forms.ListBox Numbers;
 		private System.Windows.Forms.Button btnStart;
 		private System.Windows.Forms.NumericUpDown nudWidth;
 		private System.Windows.Forms.NumericUpDown nudHeight;
 		private System.Windows.Forms.Label lblWidth;
 		private System.Windows.Forms.Label lblHeight;
 		private System.Windows.Forms.Label lblAnswer;
+		private System.Windows.Forms.TextBox txtArray;
+		private System.Windows.Forms.Button button1;
 	}
 }
 

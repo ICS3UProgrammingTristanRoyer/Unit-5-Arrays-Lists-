@@ -12,30 +12,38 @@ namespace ListAverageTristanR
 {
 	public partial class Form1 : Form
 	{
+		int average;
+		List<int> myListOfIntegers = new List<int>();
+
 		public Form1()
 		{
+
 			InitializeComponent();
+
 		}
 
 
-		private double CalculateAverage (ref double[] theListOfIntegers)
+		private double CalculateAverage ( ref int[] theListOfIntegers)
 		{
 			// declare variables
 			double theAverage;
 			double theTotalOfNumbers = 0;
-			double counter;
+			
 
-			for (counter = 0; counter < theListOfIntegers.Length ; counter++)
+			for (int counter = 0; counter < theListOfIntegers.Length ; counter++)
 			{
 				theTotalOfNumbers = theTotalOfNumbers + theListOfIntegers[counter];
 				
 			}
+
+			theAverage = theTotalOfNumbers / theListOfIntegers.Length;
+
+			return theAverage;
 		}
 		private void btnEnter_Click(object sender, EventArgs e)
 		{
 			// declare local variables
 			int userMark = -1;
-			List<double> myListOfIntegers = new List<double>();
 
 
 			// convert the value in the textbox to an integer
@@ -65,6 +73,14 @@ namespace ListAverageTristanR
 			{
 				MessageBox.Show("Please enter a number between 0 and 100.", "Invalid Numbers");
 			}
+
+			average = CalculateAverage( ref myListOfIntegers);
+
+		}
+
+		private void btnCalculate_Click(object sender, EventArgs e)
+		{
+			lblAnswer.Text = "" + average;
 
 		}
 	}
