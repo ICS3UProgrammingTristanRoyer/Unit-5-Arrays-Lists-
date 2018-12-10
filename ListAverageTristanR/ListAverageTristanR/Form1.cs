@@ -14,6 +14,8 @@ namespace ListAverageTristanR
 	{
 		int average;
 		List<int> myListOfIntegers = new List<int>();
+		int total = 0;
+		int valueTotal;
 
 		public Form1()
 		{
@@ -23,20 +25,14 @@ namespace ListAverageTristanR
 		}
 
 
-		private double CalculateAverage ( ref int[] theListOfIntegers)
+		private int CalculateAverage ( ref List<int> theListOfIntegers , int theTotal , int theValueTotal )
 		{
 			// declare variables
-			double theAverage;
-			double theTotalOfNumbers = 0;
+			int theAverage;
 			
+		
 
-			for (int counter = 0; counter < theListOfIntegers.Length ; counter++)
-			{
-				theTotalOfNumbers = theTotalOfNumbers + theListOfIntegers[counter];
-				
-			}
-
-			theAverage = theTotalOfNumbers / theListOfIntegers.Length;
+			theAverage = theValueTotal / theTotal;
 
 			return theAverage;
 		}
@@ -66,6 +62,10 @@ namespace ListAverageTristanR
 				// add the mark to the list
 				myListOfIntegers.Add(userMark);
 
+				total = total + 1;
+
+				valueTotal = valueTotal + userMark;
+
 				
 			}
 			//otherwise, display an error
@@ -74,7 +74,7 @@ namespace ListAverageTristanR
 				MessageBox.Show("Please enter a number between 0 and 100.", "Invalid Numbers");
 			}
 
-			average = CalculateAverage( ref myListOfIntegers);
+			average = CalculateAverage( ref myListOfIntegers , total , valueTotal );
 
 		}
 
