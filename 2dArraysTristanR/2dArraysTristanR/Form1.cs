@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created by: Tristan Royer
+ * Created on: Day-Month-Year
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #39 - 2D Arrays
+ * This program generates a 2d array and finds the average of all the values
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,12 +32,18 @@ namespace _2dArraysTristanR
 
 
 		}
-		private int GetAverage (int [,] the2DArray , ref int total )
+		private int GetAverage (int [,] the2DArray  )
 		{
-			
-			total = total / the2DArray.Length;
+			int total = 0;
+			int average;
+			foreach (int arrayValue in the2DArray)
+			{
 
-			return total;
+				total = total +  arrayValue;
+
+			}
+			average = total / the2DArray.Length;
+			return average;
 
 
 		}
@@ -68,8 +81,7 @@ namespace _2dArraysTristanR
 					// add the randomumber to the string of array numbers
 					aPieceOfText = aPieceOfText + " " + aRandomNumber;
 
-					// get the user total
-					userTotal = userTotal +  widthCounter + heightCounter;
+				
 			}
 				// add a line break to the end of the line to show a new row in the string
 				aPieceOfText = aPieceOfText + "\r" + "\n";
@@ -77,7 +89,7 @@ namespace _2dArraysTristanR
 			}
 			// insert the string into the textbox
 			this.txtArray.Text = aPieceOfText;
-		    average = GetAverage(a2DArray , ref userTotal);
+		    average = GetAverage(a2DArray );
 
 
 

@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created by: Tristan Royer
+ * Created on: Day-Month-Year
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #37 - Find Max Value
+ * This program generates random numbers into a list and gives the average of them.
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -80,7 +87,7 @@ namespace ListAverageTristanR
 
 		private void btnCalculate_Click(object sender, EventArgs e)
 		{
-			lblAnswer.Text = "" + average;
+			lblAnswer.Text = "The average is:" + average;
 
 		}
 	}

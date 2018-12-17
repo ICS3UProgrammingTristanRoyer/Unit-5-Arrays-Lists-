@@ -27,15 +27,14 @@ namespace MinValueTristanR
 		private double GetMinValue(int[] tmpArrayOfNumbers)
 		{
 			// declare variables
-			int counter;
 			double tmpMinValue = 501;
 			// create a for loop which repeats the if statement
-			for (counter = 0; tmpArrayOfNumbers.Length > counter; counter++ )
+			foreach (int arrayValue in tmpArrayOfNumbers)
 			{
 				// if the current index of the array is less than the current minValue it will replace it.
-				if (tmpArrayOfNumbers[counter] < tmpMinValue)
+				if (arrayValue < tmpMinValue)
 				{
-					tmpMinValue = tmpArrayOfNumbers[counter];
+					tmpMinValue = arrayValue;
 				}
 			}
 			// return the minValue.
@@ -43,6 +42,8 @@ namespace MinValueTristanR
 		}
 		private void btnStart_Click(object sender, EventArgs e)
 		{
+			//clear the list
+			this.Values.Items.Clear();
 			//declare local variables and constants
 			const int MAX_ARRAY_SIZE = 10;
 			const int MAX_RANDOM_NUMBER = 500;

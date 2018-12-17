@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created by: Tristan Royer
+ * Created on: Day-Month-Year
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #37 - Find Max Value
+ * This program generates random numbers in an array and finds the largest value
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,6 +43,8 @@ namespace MaxValueTristanR
 		}
 		private void btnStart_Click(object sender, EventArgs e)
 		{
+			// clears the list
+			this.Values.Items.Clear();
 			//declare local variables and constants
 			const int MAX_ARRAY_SIZE = 10;
 			const int MAX_RANDOM_NUMBER = 500;
@@ -64,7 +73,7 @@ namespace MaxValueTristanR
 
 			maxValue = GetMaxValue(arrayOfNumbers);
 			// edit the text to display the minValue.
-			this.lblMaxValue.Text = ("The Lowest value is:" + maxValue);
+			this.lblMaxValue.Text = ("The Highest is:" + maxValue);
 
 		}
 

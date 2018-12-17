@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created by: Tristan Royer
+ * Created on: Day-Month-Year
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #35 - String Equality
+ * This program reads a text file and another output text file says whether the strings were the same.
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
